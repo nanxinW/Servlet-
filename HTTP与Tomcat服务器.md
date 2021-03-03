@@ -15,6 +15,19 @@ JBOSS服务器，基于J2EE的开源代码的应用服务器，不但是Servlet�
 ## 下载Tomcat
 [下载链接](http://tomcat.apache.org/), apache-tomcat-9.0.40-windows-x64.zip 解压即为安装成功
 ## Tomcat的配置
-* JAVA_HOME：指向JDK安装的地址 F:\java\JDK8\JDK1.8
-* JRE_HOME：指向JRE安装的地址 F:\java\JDK8\JRE1.8
+* JAVA_HOME：指向JDK安装的地址 (eg: F:\java\JDK8\JDK1.8)
+* JRE_HOME：指向JRE安装的地址 (eg: F:\java\JDK8\JRE1.8)
 ![image](https://github.com/nanxinW/Servlet-/blob/main/Figure/java_home.png)
+* CATALINA_HOME(部分windows系统要求用户指定tomcat安装地址)：通知windows系统tomcat装在哪里 (eg: F:\tomcat\apache-tomcat-9.0.40-windows-x64\apache-tomcat-9.0.40)
+## Tomcat启动与关闭
+* 启动与关闭命令存放位置
+  Tomcat的安装位置/bin  (eg: F:\tomcat\apache-tomcat-9.0.40-windows-x64\apache-tomcat-9.0.40\bin)
+* 启动命令
+  startup.bat
+* 关闭命令
+  shutdown.bat
+ ## Tomcat内部工作文件的作用
+ 简述三个
+ * bin： Tomcat管理命令
+ * conf： Tomcat配置文件
+ * lib： Tomcat使用的jar包
