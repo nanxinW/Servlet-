@@ -15,3 +15,5 @@ JBOSS服务器，基于J2EE的开源代码的应用服务器，不但是Servlet�
 ## 下载Tomcat
 [下载链接](http://tomcat.apache.org/), apache-tomcat-9.0.40-windows-x64.zip 解压即为安装成功
 ## Tomcat的配置
+* JAVA_HOME：指向JDK安装的地址 F:\java\JDK8\JDK1.8
+* JRE_HOME：指向JRE安装的地址 F:\java\JDK8\JRE1.8
