@@ -27,7 +27,9 @@ JBOSS服务器，基于J2EE的开源代码的应用服务器，不但是Servlet�
 * 关闭命令
   shutdown.bat
  ## Tomcat内部工作文件的作用
- 简述三个
  * bin： Tomcat管理命令
  * conf： Tomcat配置文件
  * lib： Tomcat使用的jar包
+ * logs：Tomcat运行的日志文件，记录运行时的情况
+ * temp：Tomcat运行时生成的临时文件
+ * webapps：因为HTTP服务器是有求必应型的，所以当我们浏览器发送请求后，默认情况下就会在这个文件夹里面的去定位资源文件，要是有就返回给浏览器，要是没有就告诉浏览器他没有
