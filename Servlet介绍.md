@@ -62,4 +62,7 @@ class Teacher implements Servlet{
 4. Server 激活 Servlet 的 service() 方法，传递请求和响应对象作为参数。
      service() 方法获得关于请求对象的信息，处理请求，访问其他资源，获得需要的信息
      service() 方法使用响应对象的方法，将响应传回Server，最终到达客户端。service()方法可能激活其它方法以处理请求，如 doGet() 或 doPost() 
-   
+ 
+ # HttpSevletResponse接口
+ * HttpServletResponse接口负责将doGet/doPost方法执行结果写入到【响应体】交给浏览器
+ * 惯于将HttpServletResponse接口修饰的对象称为【响应对象】
