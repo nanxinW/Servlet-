@@ -66,3 +66,4 @@ class Teacher implements Servlet{
  # HttpSevletResponse接口
  * HttpServletResponse接口负责将doGet/doPost方法执行结果写入到【响应体】交给浏览器
  * 惯于将HttpServletResponse接口修饰的对象称为【响应对象】
+ 
