@@ -15,4 +15,10 @@ Run--> Edit Configuration 设置 Tomcat启动与关闭按钮
 
   * WEB-TNF：依赖的jar[mysq驱动]/核心配置文件(web.xml)
     * lib文件夹：依赖的jar[mysq驱动]
-    * web.xml：通知Tomcat当前网站那些java类是动态资源文件
+    * web.xml：通知Tomcat当前网站那些java类是动态资源文件、
+ 
+ # 后续
+1. 发布一个网站 ===> 交给Tomcat管理
+2. 创建tomcat启动管理开关
+3. 将网站webtest发布 
+4. 启动网站
