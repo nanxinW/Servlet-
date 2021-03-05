@@ -15,7 +15,7 @@ class Teacher implements Servlet{
     Servelt obj = new Teacher();
     obj.doGet();
 }
-~~~java
+~~~
 ## servlet接口实现类开发步骤
 
 * 第一步：创建一个java类实现Servelet接口，成为一个Servlet接口实现类
