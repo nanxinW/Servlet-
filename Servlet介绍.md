@@ -5,3 +5,14 @@ Servelt（Java Servlet的简称），本质上是一个**Java编写的接口，�
 
 # Servlet接口实现类
 * Http服务器能调用的【动态资源文件】必须是一个servlet接口实现类
+```
+class Student{
+    //不是动态资源文件，Tomcat无权调用
+}
+class Teacher implements Servlet{
+    //合法动态资源文件，Tomcat有权调用
+    //因为实现了Servlet接口
+    Servelt obj = new Teacher();
+    obj.doGet();
+}
+```
