@@ -53,3 +53,13 @@ class Teacher implements Servlet{
   ~~~
 
   如果现在浏览器向Tomcat索要OneServlet时 地址可以简化为：http://localhost:8080/myWeb/one
+  
+  # servlet对象生命周期
+  1. 网站中所有的Servlet接口实现类的实例对象，只能**由Http服务器负责创建**
+     在默认的情况下，Http服务器接收到对于当前Servlet接口实现类第一次请求时自动创建这个Servelet接口实现类的实例对象
+  2. Server 调用 Servlet 的 init() 方法，始化该 Servlet
+  3. Server 创建一个请求对象，处理客户端请求 & Server 创建一个响应对象，响应客户端请求
+  3. Server 激活 Servlet 的 service() 方法，传递请求和响应对象作为参数。
+     service() 方法获得关于请求对象的信息，处理请求，访问其他资源，获得需要的信息
+     service() 方法使用响应对象的方法，将响应传回Server，最终到达客户端。service()方法可能激活其它方法以处理请求，如 doGet() 或 doPost() 
+   
